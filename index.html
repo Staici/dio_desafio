@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Clínica</title>
+        <style>
+            html {
+                overflow-x: hidden;
+                font-family: "Francois One", sans-serif;
+            }
+    
+            body {
+                justify-content: center;
+                align-items: center;
+                background: white;
+            }
+    
+            nav {
+                position: relative;
+                width: 524px;
+                height: 50px;
+                background: #474087;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto;
+            }
+    
+            nav a {
+                display: inline-block;
+                font-size: 1em;
+                font-weight: 500;
+                color: #877FC9;
+                text-decoration: none;
+                padding: 0 23px;
+                z-index: 1;
+            }
+    
+            nav span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 95px;
+                height: 100%;
+                background: linear-gradient(45deg, #15188f, #6d33ff);
+                border-radius: 8px;
+                transition: .5s;
+            }
+    
+            nav a:nth-child(1):hover~span {
+                left: 50px;
+            }
+    
+            nav a:nth-child(2):hover~span {
+                left: 158px;
+                width: 200px;
+            }
+    
+            nav a:nth-child(3):hover~span {
+                left: 360px;
+                width: 110px;
+            }
+    
+            .sobre {
+                text-align: center;
+                padding: 50px;
+            }
+    
+            .sobre img {
+                width: 30%;
+                height: auto;
+                margin-top: 20px;
+            }
+    
+            .atendimento {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                margin: 50px auto;
+            }
+    
+            table {
+                margin: auto;
+            }
+    
+            table tr:hover {
+                background-color: darkgray;
+            }
+    
+            footer {
+                box-sizing: border-box;
+                padding: 50px;
+                background-color: #474087;
+                text-align: center;
+                color: white;
+            }
+            hr{
+                margin-top: 2px;
+                
+            }
+            .empresa h1{
+                padding-right: 80%;
+                font-size: 25px;
+                bottom: 100vh;
+                
+            }
+            .tabela{
+                width: 50%;
+                margin-right: 50%;
+                border: none;
+            }
+            footer p{
+	margin-top: 25px;
+
+}
+
+footer form{
+	width: 50vh;
+	margin-left:50vh;
+	margin-right: 50vh;
+}
+
+footer input, footer textarea{
+    flex-direction: column;
+    outline: unset;
+	border:none;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	width: 100%;
+	display: inline;
+	display: block;
+
+}
+p, input, textarea{
+ 	font-size:1.2rem;
+
+ }
+ footer{
+ 	padding: 50px 15px;
+ }
+
+footer form{
+	width: 100%;
+    height: 100%;
+}
+
+        </style>
+    </head>
+    <body>
+        <div>
+    <nav>
+        <a href="#Sobre">Sobre</a>
+        <a href="#atendimento">Horáro de atendimento</a>
+        <a href="#contato">Contato</a>
+        <span></span>
+    </nav>
+</div>
+    <div class="sobre" >
+    <h1 id="Sobre">Sobre a Clínica</h1>
+    <p>A Clínica de Cardiologia Vida Saudável é uma instituição dedicada ao cuidado e tratamento do coração e do sistema cardiovascular. Com uma equipe de médicos cardiologistas altamente qualificados, a clínica oferece um atendimento personalizado e humanizado para todos os pacientes, buscando promover a saúde cardíaca e prevenir doenças cardiovasculares. A clínica conta com tecnologia de ponta e realiza exames completos, como eletrocardiograma, ecocardiograma, teste ergométrico, monitoramento de pressão arterial e holter, garantindo um diagnóstico preciso e eficiente.
+
+        Nosso objetivo é não apenas tratar problemas cardíacos, mas também educar os pacientes sobre a importância de manter um estilo de vida saudável e equilibrado. A Clínica Vida Saudável promove campanhas de conscientização sobre fatores de risco, como hipertensão, colesterol alto, diabetes, tabagismo, sedentarismo e estresse, que são essenciais para prevenir doenças do coração.
+        
+        Além disso, a clínica oferece acompanhamento contínuo para pacientes com condições crônicas, como insuficiência cardíaca, arritmias e doenças coronarianas, proporcionando suporte especializado e orientação para melhorar a qualidade de vida. Cada paciente recebe um plano de cuidados personalizado, desenvolvido com base em sua condição específica, histórico familiar e necessidades individuais. 
+        
+        A Clínica de Cardiologia Vida Saudável acredita que a prevenção é o melhor remédio e, por isso, incentiva check-ups periódicos para todas as idades. Com uma equipe dedicada e uma infraestrutura moderna, estamos comprometidos em cuidar da saúde do seu coração, promovendo uma vida longa e saudável.</p>
+    <img src="desafio.jpg">
+</div>
+
+  <table id="atendimento" class="atendimento"  width="250" cellspacing="30" cellpadding="10px" align="center">
+    <caption>Horário de atendimento</caption>
+    <thead>
+    
+    <tr>
+        <th>Segunda á Sexta</th>
+        <th>Sábados</th>
+        <th>Feriados</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>08H-19H</td>
+        <td>08H-14H</td>
+        <td>08H-14H</td>
+    </tr>
+</tbody>
+</table>
+
+<footer id="contato">
+    <hr>
+<section class="empresa"> 
+       <h1 >Clinica Saúde</h1>
+</section>
+<section>
+<table class="tabela"  border="1" width="250" cellpadding="15" summary="esta tabela se refere a idade da turma A" cellspacing="5" align="center">
+    <caption>Tabela de idade</caption>
+    <thead>  
+          <th>contato</th>
+           <th>endereço</th>
+        </tr>
+       </thead>  
+        <tbody>
+        <tr>
+           <td>clinicasaude@gmail.com</td>
+           <td>av.b endereço ficiticio</td>
+        </tr>
+        <tr>
+           <td>(85) 9666-666</td>
+          
+        </tr>
+       </tbody>
+       
+
+        <h2>mensagem</h2>
+        <p>entre em contato</p>	
+        <form action="" method="">
+        	<input type="text" name="name" placeholder="seu nome">
+        	<input type="email" name="email" placeholder="seu email">
+        	<textarea name="msg" placeholder="digite uma mensagem"></textarea>
+        	<input type="submit" name="enviar">
+        	
+        </form>
+        <p>Desenvolvido por: <span class="detail"> Steicie Aleixo</span></p>
+
+    
+</footer>
+
+    </body>
+
+</html>
